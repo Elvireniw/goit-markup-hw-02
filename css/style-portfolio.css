@@ -3,7 +3,7 @@
   --primary-text-color: #2e2f42;
   --text-color-hover: #4d5ae5;
   --accent-color: #404bbf;
-  --background-color: #2e2f42;
+  --background-color: #ffffff;
 }
 
 .list {
@@ -15,6 +15,7 @@
 body {
   font-family: var(--primary-font);
   color: #434455;
+  background-color: var(--background-color);
 }
 
 /*=================Components========================*/
@@ -119,7 +120,7 @@ body {
   width: 1440px;
   left: 0px;
   top: 2280px;
-  background: var(--background-color);
+  background: #2e2f42;
 }
 
 /*=================Footer========================*/
