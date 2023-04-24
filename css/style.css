@@ -1,3 +1,12 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #434455;
+  --text-color-hover: #4d5ae5;
+  --accent-color: #404bbf;
+  --background-color: #2e2f42;
+}
+
 .list {
   list-style: none;
 }
@@ -5,28 +14,27 @@
   text-decoration: none;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #2e2f42;
+  font-family: var(--primary-font);
 }
 
 /*=================Components========================*/
 
-.modul-btn {
-  font-family: 'Roboto', sans-serif;
+.modal-btn {
+  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  color: var(--text-color-hover);
 }
 
-.modul-btn:hover,
-.modul-btn:focus {
-  background: #404bbf;
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--accent-color);
   color: #ffffff;
 }
 
@@ -41,14 +49,13 @@ body {
   font-size: 16px;
   line-height: 1.5x;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -67,11 +74,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #4d5ae5;
+  color: var(--text-color-hover);
 }
 
 .logo-color-header {
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 .menu-link {
@@ -79,11 +86,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 .contacts-header-link {
@@ -93,12 +101,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 
 .contacts-header-link:hover,
 .contacts-header-link:focus {
-  color: #404bbf;
+  color: var(--accent-color);
 }
 
 /*=================Header============================*/
@@ -109,9 +117,17 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+.hero {
+  width: 1440px;
+
+  left: 0px;
+  top: 72px;
+  background: var(--background-color);
 }
 
 /*=================Hero============================*/
@@ -125,7 +141,14 @@ body {
   font-size: 16px;
   line-height: 1.5x;
   letter-spacing: 0.02em;
-  /* color: #f4f4fd; */
+  color: #f4f4fd;
+}
+
+.footer-block {
+  width: 1440px;
+  left: 0px;
+  top: 2280px;
+  background: var(--background-color);
 }
 
 /*=================Footer========================*/
